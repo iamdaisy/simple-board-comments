@@ -1,0 +1,10 @@
+<h1>HOME</h1>
+
+
+<br>
+<hr>
+
+<% @posts.each do |p| %>
+<%= p.id %>번째 글: <%= p.title %>
+<a href='/post/show/<%= p.id %>'>보기</a><br>
+<% end %>

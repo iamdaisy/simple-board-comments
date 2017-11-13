@@ -1,0 +1,7 @@
+<h1>회원정보</h1>
+<p></p>
+
+<% @users.each do |u|%>
+이메일: <%= u.email %><br>
+패스워드: <%= u.password %><br>
+<% end %>
